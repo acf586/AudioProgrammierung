@@ -11,7 +11,7 @@ for (let i = 0; i < drumpads.length; i++) {
     gainNode.gain.value = 0.8;
 
     soundNode.connect(gainNode);
-    gainNode.connect(context.destination);
+    gainNode.connect(context.destination); // nimmt als Output den im Browser eingestellten Output
 
     drumpads[i].addEventListener("mousedown", function (e) {playSound(i)});
 }
