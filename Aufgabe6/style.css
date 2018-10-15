@@ -1,0 +1,23 @@
+html,body{
+    padding:0;
+    margin: 0;
+    background-color: #abe2f3;
+    color: black;
+}
+
+div{
+    font-size: 1.5em;
+}
+
+#gainContainer{
+    background-color: #8bfafa;
+    width: 100%;
+}
+#panningContainer{
+    background-color: #8bfafa;;
+    width: 100%;
+}
+#delayContainer{
+    background-color: #8bfafa;;
+    width: 100%;
+}

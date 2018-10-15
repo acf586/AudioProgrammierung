@@ -1,0 +1,33 @@
+html, body {
+    
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+h1 {
+    color: #ffffff;
+}
+
+div {
+    width: 50%;
+    height: 50%;
+    float: left;
+}
+#Drum1:active, #Drum2:active, #Drum3:active, #Drum4:active {
+    background: #ffffff;
+ }
+
+#Drum1 {
+    background: #ff00ff;
+}
+#Drum2 {
+    background: #00ff00;
+}
+#Drum3 {
+    background: #0000ff;
+}
+#Drum4 {
+    background: #ff0000;
+}

@@ -23,6 +23,7 @@ document.getElementById("mainContainer").addEventListener("mouseenter", function
 document.getElementById("mainContainer").addEventListener("mouseleave", function () {
     console.log("leave");
 
+
     oscillatorNode.stop(context.currentTime); // nach stop kann der  oscillator nicht mehr gestartet werden.
 
     oscillatorNode.disconnect();
@@ -45,6 +46,8 @@ function playSound(event) {
     gainNode.gain.value = gain;
 
     oscillatorNode.frequency.value = frequency;
+
+    //oscillatorNode.frequency.setTargetAtTime(frequency,currentTime,0.01);
 
     //oscillatorNode.start(context.currentTime);
     //oscillatorNode.stop(context.currentTime + 1);
