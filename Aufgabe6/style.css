@@ -1,23 +1,53 @@
 html,body{
     padding:0;
     margin: 0;
-    background-color: #abe2f3;
+    background-color: #000000;
     color: black;
 }
 
-div{
-    font-size: 1.5em;
+#mainContainer{
+    height: 100%;
+    width: 100%;
+}
+
+#playContainer{
+    height: 50%;
+    width: 100%;
+}
+
+#controlContainer{
+    height: 50%;
+    width: 100%;
+}
+
+#playStopButton{
+    width: 100%;
+    height: 100%;
 }
 
 #gainContainer{
-    background-color: #8bfafa;
-    width: 100%;
+    background-color: #fac18b;
+    width: 30%;
+    margin: 0 auto;
+    
 }
 #panningContainer{
-    background-color: #8bfafa;;
-    width: 100%;
+    background-color: hsl(286, 100%, 78%);;
+    width: 30%;
+    margin: 0 auto;
 }
 #delayContainer{
-    background-color: #8bfafa;;
-    width: 100%;
+    background-color: #85fad7;;
+    width: 30%;
+    margin: 0 auto;
+}
+
+#gainSlider{
+    width: 80%;
+}
+#panningSlider{
+    width: 80%;
+}
+#delaySlider{
+    width: 80%;
 }

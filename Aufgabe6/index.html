@@ -10,20 +10,27 @@
 </head>
 <body>
     <div id = "mainContainer">
-        <button id = playStopButton>Play</button>
+        <div id = "playContainer">
+                <button id = playStopButton>Play</button>
+        </div>
 
-        <div id = gainContainer>Gain
-                <input type="range" min="0" max="100" value="10" class="slider" id="gainSlider">
-                <p>Value: <span id="gainOutput"></span></p>
+        <div id = "controlContainer">
+                <div id = gainContainer>
+                        <input type="range" min="0" max="100" value="10" class="slider" id="gainSlider">
+                        <p>Gain: <span id="gainOutput"></span></p>
+                </div>
+                <div id = panningContainer>
+                        <input type="range" min="0" max="100" value="50" class="slider" id="panningSlider">
+                        <p>Panning: <span id="panningOutput"></span></p>
+                </div>
+                <div id = delayContainer>
+                        <input type="range" min="0" max="100" value="0" class="slider" id="delaySlider">
+                        <p>Delay: <span id="delayOutput"></span></p>
+                </div>
         </div>
-        <div id = panningContainer>Panning
-                <input type="range" min="0" max="100" value="50" class="slider" id="panningSlider">
-                <p>Value: <span id="panningOutput"></span></p>
-        </div>
-        <div id = delayContainer>Delay
-                <input type="range" min="0" max="100" value="0" class="slider" id="delaySlider">
-                <p>Value: <span id="delayOutput"></span></p>
-        </div>
+        
+
+        
     </div>
     <script src="playSong.js"></script>
 

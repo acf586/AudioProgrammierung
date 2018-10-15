@@ -1,5 +1,7 @@
 var context = new AudioContext();
+var oscillator = null;
 var gainNode = context.createGain();
+
 var minFrequency = 20;
 var maxFrequency = 500;
 
@@ -49,10 +51,8 @@ function playSound(event) {
 
     oscillatorNode.frequency.value = frequency;
 
-    //oscillatorNode.frequency.setTargetAtTime(frequency,currentTime,0.01);
-
-    //oscillatorNode.start(context.currentTime);
-    //oscillatorNode.stop(context.currentTime + 1);
+    oscillator.frequency.setTargetAtTime(((mousePositionX / windowWidth) * maxFrequency) + minFrequency, context.currentTime, 0.01);
+    gainNode.gain.setTargetAtTime(1 - ((mousePositionY / windowHeight) * maxGain) + minGain, context.currentTime, 0.01);
 }
 
 
