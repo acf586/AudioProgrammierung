@@ -1,5 +1,7 @@
-var context = new AudioContext(),
-    gainNode = context.createGain();
+var context = new AudioContext();
+var gainNode = context.createGain();
+var minFrequency = 20;
+var maxFrequency = 500;
 
 document.getElementById("mainContainer").addEventListener('mousemove', function (e) {
 
@@ -38,7 +40,7 @@ document.getElementById("mainContainer").addEventListener("mouseleave", function
 function playSound(event) {
     gain = event.clientY / document.getElementById("mainContainer").clientHeight;
 
-    frequency = event.clientX / document.getElementById("mainContainer").clientWidth * 200 + 50;
+    frequency = event.clientX / document.getElementById("mainContainer").clientWidth * (maxFrequency-minFrequency) + minFrequency;
 
     document.getElementById("outputText").innerHTML = "Gain: " + gain + " Frequency:" + frequency;
     console.log("Gain: " + gain + " frequency: " + frequency)
