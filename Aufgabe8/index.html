@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div id = "mainContainer">
+        <div id = "playContainer">
+                <button id = playStopButton>Play</button>
+        </div>
+
+        <div id = "controlContainer">
+                <div id = thresholdContainer>
+                        <input type="range" min="0" max="100" value="76" class="slider" id="thresholdSlider">
+                        <p>Threshold: <span id="thresholdOutput"></span></p>
+                </div>
+                <div id = ratioContainer>
+                        <input type="range" min="0" max="100" value="60" class="slider" id="ratioSlider">
+                        <p>Ratio: <span id="ratioOutput"></span></p>
+                </div>
+                <div id = kneeContainer>
+                        <input type="range" min="0" max="100" value="75" class="slider" id="kneeSlider">
+                        <p>Knee: <span id="kneeOutput"></span></p>
+                </div>
+                <div id = attackContainer>
+                        <input type="range" min="0" max="100" value="75" class="slider" id="attackSlider">
+                        <p>Attack: <span id="attackOutput"></span></p>
+                </div>
+                <div id = releaseContainer>
+                        <input type="range" min="0" max="100" value="75" class="slider" id="releaseSlider">
+                        <p>Release: <span id="releaseOutput"></span></p>
+                </div>
+                <div id= "reductionOutput">Reduction: 0 dB</div>
+        </div>
+        
+
+        
+    </div>
+    <script src="playSong.js"></script>
+
+    
+</body>
+</html>

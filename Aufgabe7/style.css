@@ -13,6 +13,11 @@ div{
     float: left;
     background: #fa9797;
 }
+
+#caveContainer:active, #churchContainer:active, #garageContainer:active, #roomContainer:active {
+    background: #ffff0f;
+}
+
 #mainContainer{
     width: 100%;
     height: 100%;

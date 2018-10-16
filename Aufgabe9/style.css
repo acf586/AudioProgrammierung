@@ -1,0 +1,62 @@
+html,body{
+    padding:0;
+    margin: 0;
+    background-color: #000000;
+    color: black;
+}
+
+#mainContainer{
+    height: 100%;
+    width: 100%;
+}
+
+#playContainer{
+    margin: 0 auto;
+    height: 30vh;
+    width: 30%;
+    
+}
+
+#controlContainer{
+    margin: 0 auto;
+    height: 50%;
+    width: 30%;
+}
+#selectContainer{
+    margin: 0 auto;
+    width: 30%;
+    height: 20vh;  
+}
+#selectList{
+    width: 100%;
+    height: 100%;
+}
+
+#playStopButton{
+    width: 100%;
+    height: 100%;
+    background-color: #c9ff7c;
+}
+
+#frequencyContainer{
+    background-color: #fac18b;
+    width: 100%;
+    
+    
+}
+#detuneContainer{
+    background-color: hsl(286, 100%, 78%);;
+    width: 100%;
+}
+#qualityContainer{
+    background-color: #85fad7;;
+    width: 100%;
+}
+#gainContainer{
+    background-color: rgb(137, 250, 133);;
+    width: 100%;
+}
+
+.slider{
+    width: 80%;
+}

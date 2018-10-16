@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div id = "mainContainer">
+        <div id = "playContainer">
+                <button id = playStopButton>Play</button>
+        </div>
+        <div id=selectContainer>
+                <select id ="selectList">
+                        <option value="lowpass">Lowpass</option>
+                        <option value="highpass">Highpass</option>
+                        <option value="bandpass">Bandpass</option>
+                        <option value="lowshelf">Lowshelf</option>
+                        <option value="peakin">Peaking</option>
+                        <option value="notch">Notch</option>
+                        <option value="allpass">Allpass</option>
+                </select>
+        </div>
+        
+
+        <div id = "controlContainer">
+                <div id = frequencyContainer>
+                        <input type="range" min="20" max="20000" value="1000" class="slider" id="frequencySlider">
+                        <p>frequency: <span id="frequencyOutput"></span></p>
+                </div>
+                <div id = detuneContainer>
+                        <input type="range" min="-100" max="100" value="0" class="slider" id="detuneSlider">
+                        <p>detune: <span id="detuneOutput"></span></p>
+                </div>
+                <div id = qualityContainer>
+                        <input type="range" min="0" max="100" value="0" class="slider" id="qualitySlider">
+                        <p>quality: <span id="qualityOutput"></span></p>
+                </div>
+                <div id = gainContainer>
+                        <input type="range" min="-40" max="40" value="0" class="slider" id="gainSlider">
+                        <p>gain: <span id="gainOutput"></span></p>
+                </div>
+        </div>
+        
+
+        
+    </div>
+    <script src="playSong.js"></script>
+
+    
+</body>
+</html>

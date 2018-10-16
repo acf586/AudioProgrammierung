@@ -23,9 +23,11 @@ playStopButton.onclick = function(){
     console.log("isPlaying"+isPlaying);
     if(isPlaying){
         sound.play();
+        document.getElementById("playContainer").innerHTML = "Pause";
     }
     else{
         sound.pause();
+        document.getElementById("playContainer").innerHTML = "Play";
     }
 }
 
