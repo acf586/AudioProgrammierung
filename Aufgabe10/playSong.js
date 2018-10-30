@@ -9,7 +9,8 @@ var distortion = context.createWaveShaper();
 source.connect(distortion);
 distortion.connect(context.destination);
 
-distortion.curve = makeDistortionCurve(200);
+distortion.curve = makeDistortionCurve(0);
+//?
 distortion.oversample = "4x";
 
 isPlaying = false;
@@ -32,7 +33,7 @@ playStopButton.onclick = function(){
 }
 
 intensitySlider.oninput = function () {
-    distortion.curve = makeDistortionCurve(this.value);
+    distortion.curve = makeDistortionCurve(Number(this.value));
     document.getElementById("intensityOutput").innerHTML = this.value ;
 }
 
@@ -47,7 +48,6 @@ function makeDistortionCurve(amount) {
         var x = i * 2 / n_samples - 1;
         curve[i] = (Math.PI + amount) * x / (Math.PI + (amount * Math.abs(x)));
     }
-    
     return curve;
 };
 
